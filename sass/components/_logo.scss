@@ -1,0 +1,40 @@
+// LOGO HEADER
+.logo__first_part {
+  display: flex;
+  margin-left: 110px;
+  font-family: var(--main-color);
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}
+
+.logo__sec_part {
+  display: flex;
+  margin-right: 46px;
+  color: var(--secondary-color);
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  line-height: 1.192;
+  font-weight: 700;
+  font-size: 26px;
+}
+.logo__settings {
+  padding-top: 24px;
+  padding-bottom: 25px;
+}
+
+// LOGO FOOTER
+
+.logo__first_part_footer {
+  display: flex;
+  font-family: var(--main-color);
+  font-weight: 700;
+  font-size: 26px;
+  text-decoration: none;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+  color: #2196f3;
+}

@@ -1,0 +1,24 @@
+.container {
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  .header & {
+  display: flex;
+}
+}
+.container_our_team_bg {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container_hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: var(--third-color);
+  padding-top: 200px;
+  padding-bottom: 200px;
+}

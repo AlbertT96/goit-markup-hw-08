@@ -1,0 +1,72 @@
+.footer {
+  background: #2f303a;
+
+  &__text {
+    font-size: 14px;
+    text-decoration: none;
+  }
+}
+.logo_footer {
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+.padding_footer__join_us {
+  padding-left: 50px;
+  text-decoration: none;
+  padding-top: 72px;
+  padding-bottom: 10px;
+}
+
+.newsleter {
+  margin-left: 80px;
+}
+
+.email-words {
+  font-family: var(--main--font);
+  margin-top: 0;
+  margin-left: 0;
+  padding-top: 2px;
+}
+.join-us {
+  padding-top: 36px;
+  padding-bottom: 5px;
+  margin-left: 10px;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.in-line {
+  display: flex;
+}
+
+.svg-save {
+  height: 24px;
+  width: 24px;
+  margin-left: 24px;
+}
+
+.svg-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.email {
+  box-sizing: border-box;
+  width: 358px;
+  height: 50px;
+  background-color: inherit;
+  padding: 15px 16px;
+  margin-top: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+}
+
+.adress_footer_list_item {
+  &:focus,
+  &:hover {
+    color: var(--main--color);
+  }
+}

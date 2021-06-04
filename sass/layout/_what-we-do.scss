@@ -1,0 +1,25 @@
+.box {
+  position: relative;
+  width: 370px;
+  height: 294px;
+  padding-right: 15px;
+  padding-left: 15px;
+  &:first-child {
+    width: 370px;
+    height: 294px;
+    padding-left: 15px;
+  }
+  &:last-child {
+    width: 370px;
+    height: 294px;
+    padding-right: 15px;
+  }
+}
+
+.what_we_do {
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
