@@ -1,0 +1,6 @@
+@import "../utils/variable";
+
+.background__dark-theme {
+  background: getColor(second-dark-bg);
+  color: getColor(font-light);
+}

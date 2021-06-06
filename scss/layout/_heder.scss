@@ -1,0 +1,135 @@
+@import "../utils/variable";
+
+.header {
+  &--underline {
+    border: 1px solid getColor(under-line);
+  }
+}
+.nav {
+  display: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.02em;
+
+  &__list {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__links {
+    color: getColor(font-dark);
+
+    &:hover,
+    &:active {
+      color: getColor(active);
+    }
+  }
+
+  &__text {
+    margin: 0;
+  }
+
+  &__items {
+    position: relative;
+    padding: 32px 0;
+
+    &--underline > a::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 53px;
+      height: 4px;
+      border-radius: 2px;
+      background-color: getColor(active);
+    }
+  }
+}
+
+.adressContacts {
+  display: none;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 1.166;
+  letter-spacing: 0.02em;
+
+  &__items {
+    &--margin-bottom {
+      margin-bottom: 10px;
+    }
+  }
+
+  &__links {
+    color: getColor(font-grey);
+    fill: getColor(font-grey);
+
+    &:hover,
+    &:active {
+      color: getColor(active);
+      fill: getColor(active);
+    }
+  }
+}
+
+.burger {
+  box-sizing: border-box;
+  padding: 12px 8px;
+
+  &--margin {
+    margin: 10px;
+  }
+
+  &:hover {
+    fill: getColor(active);
+    cursor: pointer;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .nav {
+    display: inline-block;
+    width: 282px;
+  }
+  .adressContacts {
+    display: block;
+
+    &--margin-top {
+      margin-top: 21px;
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .nav {
+    display: inline-block;
+    width: 282px;
+  }
+
+  .adressContacts {
+    display: flex;
+    font-size: 14px;
+    line-height: 1.142;
+
+    &--margin-top {
+      margin-top: 32px;
+    }
+
+    &__items {
+      &--margin-bottom {
+        margin-bottom: 0;
+      }
+      &--margin-right {
+        margin-right: 30px;
+      }
+    }
+  }
+
+  .burger {
+    display: none;
+  }
+}

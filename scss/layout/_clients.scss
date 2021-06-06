@@ -1,0 +1,69 @@
+@import '../utils/variable';
+
+.client-list{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
+  &--margin-top{
+     margin-top: 50px;
+  }
+
+  &__link{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 210px;
+    height: 92px;
+    
+    box-sizing: border-box;
+    border: 1px solid getColor(svg-grey);
+    border-radius: 4px;
+    fill: getColor(svg-grey);
+
+    &:hover,
+    &:focus{
+      border-color: getColor(active); 
+      fill: getColor(active);
+    }
+
+    &--margin {
+      margin-left: 15px;
+      margin-right: 15px;
+    }
+
+    &--margin-top {
+      margin-top: 15px;
+    }
+
+    &--margin-bottom {
+      margin-bottom: 15px;
+    }
+
+  }
+
+  &__svg{
+    width: 106px;
+    height: 60px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .client-list{
+    &__link{
+      width: 226px;
+      height: 92px; 
+    }
+  }
+}
+
+@media screen and (min-width: 1200px){
+   .client-list{
+    &__link{
+      width: 170px;
+      height: 92px; 
+    }
+  }
+}
+

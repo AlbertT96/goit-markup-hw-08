@@ -1,0 +1,178 @@
+@import "../utils/variable";
+
+%button {
+  width: 200px;
+  height: 50px;
+
+  display: block;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border-style: none;
+
+  color: getColor(font-light);
+  font-family: getFont(main-roboto);
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  background: getColor(active);
+}
+
+.hero__button {
+  @extend %button;
+  box-sizing: border-box;
+
+  margin: 30px auto 0 auto;
+  padding: 10px 30px;
+}
+
+.form__button {
+  @extend %button;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 50px;
+}
+
+.footer-button {
+  box-sizing: border-box;
+
+  @extend %button;
+
+  &--margin-top {
+    margin-top: 20px;
+  }
+
+  &--margin-left {
+    margin-left: 12px;
+  }
+
+  &--position-relative {
+    position: relative;
+  }
+
+  &__svg {
+    position: absolute;
+    top: 13px;
+    right: 28px;
+  }
+
+  &__text {
+    position: absolute;
+    left: 42px;
+    top: 10px;
+  }
+}
+
+.burger__button{
+  border: none;
+  background-color: getColor(main-bg);
+}
+
+.menu__button-close {
+  border: none;
+  background-color: getColor(main-bg);
+  position: absolute;
+  top: 21px;
+  right: 25.33px;
+}
+
+.modal__button-close {
+  box-sizing: border-box;
+  stroke: getColor(font-dark);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  width: 30px;
+  height: 30px;
+
+  position: absolute;
+  top: 8px;
+  right: 8px;
+
+  cursor: pointer;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+
+  &:hover {
+    stroke: getColor(active);
+    animation: puls 2000ms infinite 250ms;
+  }
+}
+
+.portfolio__button {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.625;
+  letter-spacing: 0.03em;
+  border-radius: 4px;
+  border-style: none;
+
+  background-color: getColor(button-bg);
+  font-family: getFont(main-roboto);
+
+  &--center {
+    text-align: center;
+  }
+
+  &--margin-right {
+    margin-right: 8px;
+  }
+
+  &--margin-top {
+    margin-top: 15px;
+  }
+
+  &--wszystkie-size {
+    width: 103px;
+    height: 38px;
+  }
+
+  &--strony-size {
+    width: 128px;
+    height: 38px;
+  }
+
+  &--aplikacje-size {
+    width: 145px;
+    height: 38px;
+  }
+
+  &--dizajn-size {
+    width: 103px;
+    height: 38px;
+  }
+
+  &--marketing-size {
+    width: 130px;
+    height: 38px;
+  }
+
+  &:hover,
+  &:active {
+    color: getColor(font-light);
+    background-color: getColor(active);
+    cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+      0px 2px 2px rgba(0, 0, 0, 0.12);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .portfolio__button {
+    &--margin-top {
+      margin-top: 0;
+    }
+  }
+}
+
+@media screen and(min-width: 1200px) {
+  .portfolio__button {
+    &--margin-top {
+      margin-top: 0;
+    }
+  }
+}

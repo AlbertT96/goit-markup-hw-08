@@ -1,0 +1,46 @@
+@import "../utils/variable";
+
+.whatWeDo-photos {
+  position: absolute;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0;
+  border: 0;
+  height: 1px;
+  width: 1px;
+  overflow: hidden;
+}
+
+
+@media screen and (min-width: 1200px) {
+  .whatWeDo-photos {
+    display: flex;
+    width: 370px;
+    height: 294px;
+    position: relative;
+    overflow: visible;
+
+    &__wrapper {
+      &--margin-left {
+        margin-left: 15px;
+      }
+      &--margin-right {
+        margin-right: 15px;
+      }
+    }
+
+    &__description {
+      position: absolute;
+      bottom: 0;
+      width: 370px;
+      height: 70px;
+      box-sizing: border-box;
+
+      padding-top: 27px;
+      background: rgba(47, 48, 58, 0.8);
+      color: getColor(font-light);
+      text-align: center;
+      text-transform: uppercase;
+    }
+  }
+}

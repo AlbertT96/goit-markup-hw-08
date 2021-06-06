@@ -1,0 +1,78 @@
+.hero{
+ background-image: linear-gradient(
+    rgba(47, 48, 58, 0.4),
+    rgba(47, 48, 58, 0.4)
+    ), 
+  url(../images/hero/hero-mobile.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  overflow: auto; 
+  
+  &--padding-top-bottom{
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 480px) and (max-width: 768px),
+screen and (min-resolution: 192dpi) and (min-width: 480px) and (max-width: 768px),
+screen and (min-resolution: 2dppx) and (min-width: 480px) and (max-width: 768px)
+{
+  .hero{
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), 
+    url(../images/hero/hero-mobile@2x.jpg);
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px){
+  .hero{
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), 
+    url(../images/hero/hero-tablet.jpg);
+  }
+}
+
+@media screen and (min-device-pixel-ratio: 2) and (min-width: 768px) and (max-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 768px) and (max-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 768px) and (max-width: 1200px){
+   .hero{
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), 
+    url(../images/hero/hero-tablet@2x.jpg);
+  }
+}
+
+@media screen and(min-width: 1200px){
+  .hero{
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), 
+    url(../images/hero/hero-pc.jpg);
+   
+    &--padding-top-bottom{
+      padding-top: 200px;
+       padding-bottom: 200px;
+    }
+  }
+}
+
+@media scren and (min-device-pixel-ratio: 2) and (min-width: 1200px),
+screen and (min-resolution: 192dpi) and (min-width: 1200px),
+screen and (min-resolution: 2dppx) and (min-width: 1200px){
+  .hero{
+    background-image: linear-gradient(
+      rgba(47, 48, 58, 0.4),
+      rgba(47, 48, 58, 0.4)
+      ), 
+    url(../images/hero/hero-pc@2x.jpg);
+  }
+}
+

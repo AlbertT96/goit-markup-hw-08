@@ -1,0 +1,43 @@
+@import "../utils/variable";
+
+.logo {
+  width: 145px;
+  height: 31px;
+  padding: 16px 0 16px 15px;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.192;
+  letter-spacing: 0.03em;
+
+  font-family: getFont(second-raleway);
+
+  &__label {
+    &--start {
+      color: getColor(active);
+    }
+
+    &--end {
+      color: getColor(font-dark);
+    }
+
+    &--dark-theme {
+      color: getColor(font-light);
+    }
+  }
+
+  &--padding-reset {
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1200px) {
+  .logo {
+    padding: 24px 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .logo {
+    padding: 24px 0;
+  }
+}

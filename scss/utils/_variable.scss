@@ -1,0 +1,38 @@
+
+$colors:(
+    main-bg: #FFF,
+    second-dark-bg: #2F303A,
+    second-dark-transparent-bg:rgba(255, 255, 255, 0.1),
+    second-backdrop-transparent-bg:rgba(0, 0, 0, 0.2),
+    second-box-transiton: rgba(33, 150, 243, 0.9),
+    second-light-bg: #F5F4FA,
+    
+
+    font-dark: #212121,
+    font-grey:#757575,
+    font-light: #FFF,
+    font-light-transparent: #ffffff99,
+
+    active: #2196F3,
+
+    button-bg:#F5F4FA,
+
+    svg-grey: #AFB1B8,
+
+    under-line:#ECECEC,
+
+    border-light:#EEEEEE
+);
+
+@function getColor($name){
+    @return map-get($colors, $name);
+}
+
+$fonts:(
+    'main-roboto': ('Roboto', sans-serif),
+    'second-raleway': ('Raleway', sans-serif),
+);
+
+@function getFont($font){
+    @return map-get($fonts, $font);
+}

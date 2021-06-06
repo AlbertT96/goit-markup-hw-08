@@ -1,0 +1,36 @@
+@import'../utils/variable';
+
+.social-svg{
+  display: flex;
+  justify-content: center;
+
+  &__link{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+
+    margin-left: 10px;
+    fill: getColor(svg-grey);
+
+    &:hover,
+    &:focus{
+        background-color:getColor(active);
+        fill: getColor(font-light);
+    }
+
+    &--dark-grey-background{
+      background: getColor( second-dark-transparent-bg);
+    }
+  }
+
+  &--margin-bottom{
+    margin-bottom: 30px;
+  }
+  
+  &--margin-top{
+    margin-top: 20px;
+  }
+}
